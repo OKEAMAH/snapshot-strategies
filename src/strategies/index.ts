@@ -1,6 +1,7 @@
 import { readFileSync } from 'fs';
 import path from 'path';
 
+import * as delegatexyzErc721BalanceOf from './delegatexyz-erc721-balance-of';
 import * as urbitGalaxies from './urbit-galaxies/index';
 import * as ecoVotingPower from './eco-voting-power';
 import * as dpsNFTStrategy from './dps-nft-strategy';
@@ -299,6 +300,7 @@ import * as rocketpoolNodeOperatorDelegatev4 from './rocketpool-node-operator-de
 import * as rocketpoolNodeOperatorDelegatev5 from './rocketpool-node-operator-delegate-v5';
 import * as rocketpoolNodeOperatorDelegatev6 from './rocketpool-node-operator-delegate-v6';
 import * as rocketpoolNodeOperatorDelegatev7 from './rocketpool-node-operator-delegate-v7';
+import * as rocketpoolNodeOperatorDelegatev8 from './rocketpool-node-operator-delegate-v8';
 import * as earthfundChildDaoStakingBalance from './earthfund-child-dao-staking-balance';
 import * as unipilotVaultPilotBalance from './unipilot-vault-pilot-balance';
 import * as sdBoostTWAVP from './sd-boost-twavp';
@@ -441,6 +443,7 @@ import * as swarmStaking from './swarm-staking';
 import * as mocaStaking from './moca-staking';
 
 const strategies = {
+  'delegatexyz-erc721-balance-of': delegatexyzErc721BalanceOf,
   'giveth-balances-supply-weighted': givethBalancesSupplyWeighted,
   'giveth-gnosis-balance-supply-weighted-v3':
     givethGnosisBalanceSupplyWeightedV3,
@@ -750,6 +753,7 @@ const strategies = {
   'rocketpool-node-operator-delegate-v5': rocketpoolNodeOperatorDelegatev5,
   'rocketpool-node-operator-delegate-v6': rocketpoolNodeOperatorDelegatev6,
   'rocketpool-node-operator-delegate-v7': rocketpoolNodeOperatorDelegatev7,
+  'rocketpool-node-operator-delegate-v8': rocketpoolNodeOperatorDelegatev8,
   'earthfund-child-dao-staking-balance': earthfundChildDaoStakingBalance,
   'sd-boost-twavp': sdBoostTWAVP,
   'unipilot-vault-pilot-balance': unipilotVaultPilotBalance,
